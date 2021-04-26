@@ -1,0 +1,48 @@
+.page {
+    background-color: green;
+}
+.container {
+    display: flex;
+    margin: auto;
+}
+
+.opcoes {
+    font-size: 28px;
+
+}
+
+.opcoes select {
+    font-family: arial;
+    font-size: 28px;
+}
+
+.opcoes select input {
+    font-family: "Times New Roman";
+    font-size: 28px;
+}
+
+.valor {
+    padding: 10px;
+    font-size: 28px;
+}
+
+.entrada {
+    margin-top: 20px;
+}
+
+.botao {
+    font-size: 28px;
+    padding: 10px;
+}
+
+.mensagem {
+    font-family: arial;
+    font-size: 28px;
+}
+.home{
+    width: 1000px;
+    font-family: arial;
+    margin-left: initial;
+    margin-right:  initial;
+    border: 0px solid;
+}

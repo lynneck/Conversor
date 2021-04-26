@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="page">
+
+<div class="container">
+
+    <form method="post" action="/converter" th:object="${form}">
+        <div class="home">
+
+            <h1>Conversor de Moedas</h1>
+        </div>
+
+
+        <div class="opcoes">
+            <select th:field="*{tipoConversao}">
+                <option value="USD-BRL">Converter de dólar para real</option>
+                <option value="BRL-USD">Converter de real para dólar</option>
+            </select>
+        </div>
+
+        <div class="entrada">
+            <input class="valor" type="text" th:field="*{valorAConverter}"/>
+            <input class="botao" type="submit" value="Converter" />
+            <input datatype="botao" type="date" value="Converter" name="Horario" />
+
+        </div>
+
+        <div class="mensagem">
+            <p th:text="${mensagem}"></p>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
